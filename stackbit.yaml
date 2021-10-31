@@ -1,0 +1,41 @@
+stackbitVersion: ~0.3.0
+ssgName: jekyll
+publishDir: _site
+dataDir: _data
+pagesDir: ''
+models:
+  gallery:
+    type: page
+    label: Gallery
+    folder: collections/_gallery
+    match: '*'
+    fields:
+      - type: string
+        name: layout
+        label: Layout
+      - type: string
+        name: src
+        label: Src
+  collection:
+    type: page
+    label: Collection
+    folder: collections
+    match: '**/*'
+    exclude:
+      - _gallery/2015-02-28-test-img.md
+    fields:
+      - type: string
+        name: layout
+        label: Layout
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: categories
+        label: Categories
+      - type: string
+        name: tags
+        label: Tags
+      - type: string
+        name: eyeCatcher
+        label: Eye Catcher

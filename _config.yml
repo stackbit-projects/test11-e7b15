@@ -1,0 +1,43 @@
+title: Theme Antarctica
+email: your-email@domain.com
+author: SdtElectronics
+copyright: 'Unpublished Work (cleft) 2017-{currentYear} {author}'
+description: >-
+  Write an awesome description for your new site here. You can edit this line in
+  _config.yml. It will appear in your document head meta (for Google search
+  results) and in your feed.xml site description.
+baseurl: ''
+url: ''
+favicon: ''
+template:
+  date_format: '%b %d, %Y'
+  widgets: colophon comment global_cmt post_meta share
+  portfolios: projects gallery
+valine:
+  appId: GoHOdR14a6Qubobq68emQ8n2-MdYXbMMI
+  appKey: SCxcdTzApt8RXJVrtqsDXay0
+exclude:
+  - ./.reff/
+  - ./.reff/_posts/
+collections_dir: collections
+collections:
+  projects:
+    output: true
+  gallery:
+    output: true
+projects_categories:
+  - Hardware
+  - Software
+defaults:
+  - scope:
+      path: ''
+      type: pages
+    values:
+      avatar: assets/img/a-default.png
+highlighter: rouge
+markdown: kramdown
+kmarkdown:
+  input: GFM
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
